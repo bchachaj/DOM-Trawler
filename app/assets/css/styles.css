@@ -1,15 +1,166 @@
 body {
-  background: white;
-  color: black;
+  /*background: #9E9E9E;*/
+  color: #CDDC39;
   font-family: sans-serif;
-
+  color: #CDDC39;
+  margin: 0;
+  padding: 0;
 }
 
+.nav {
+  height: 50px;
+  background: #FFC107;
+  border-top: 5px solid darkslategray;
+  position: relative;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 2px 5px darkgray;
+}
 
+.dark-primary-color    { background: #AFB42B; }
+.default-primary-color { background: #CDDC39; }
+.light-primary-color   { background: #F0F4C3; }
+.text-primary-color    { color: #212121; }
+.accent-color          { background: #9E9E9E; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
 a {
   color: orange;
 }
 
 p, figcaption {
   padding: 10px;
+}
+
+section {
+  width: 49%;
+  min-width: 300px;
+  transition-duration: 1.5s;
+}
+
+ul {
+ width: 90%;
+ /*border: 1px solid purple;*/
+ padding: 10px;
+ list-style-type: none;
+ min-height: 100px;
+ background: darkgray;
+ /*border-radius: 5px;*/
+}
+
+ul li {
+  width: auto;
+  padding: 5px;
+  max-width: 80%;
+  background: #FFC107;
+  height: 50px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  border: 1px solid gray;
+  /*box-shadow: -2px 2px 5px #212121;*/
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #FFC107;
+  width: 100%;
+  height: 150px;
+}
+
+.links {
+  margin-right: 30px;
+}
+
+
+.nav h1, h3 {
+  margin-right: 100px;
+  color: #212121;
+}
+
+.nav h1, .nav h5 {
+  color: #212121;
+  font-family: 'Lobster';
+  text-shadow: -1px 2px 2px #BDBDBD;
+}
+.nav a {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: darkslategray;
+}
+
+li p {
+  margin: 0;
+  padding: 5px;
+  margin-left: 30px;
+  width: 300px;
+  word-wrap: break-word;
+  white-space: normal;
+  color: #212121;
+  font-weight: bold;
+}
+
+
+button {
+  background: none;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid black;
+}
+
+button:hover {
+  color: orange;
+  border: 1px solid orange;
+}
+
+.todo-delete {
+  color: white;
+  border: none;
+  font-size: 22px;
+  margin-bottom: 2px;
+}
+.todo-delete:hover {
+  border: none;
+  color: darkslategray;
+}
+
+.code-section {
+  width: 49%;
+
+}
+
+ul {
+  transition: ease-in-out;
+  transition-duration: 1.5s;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+.code-console {
+  background: darkslategray;
+  color: #CDDC39;
+  height: 500px;
+}
+.demo-code {
+  width: 340px;
+  text-align: center;
+  max-width: 320px;
+  margin: 0 auto;
+
 }
