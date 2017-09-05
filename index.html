@@ -10,9 +10,9 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
     <!-- testing  -->
+  <script src="./lib/dom-trawler.js" charset="utf-8"></script>
   <script src="./lib/demo.js" charset="utf-8">
   </script>
-  <script src="./lib/dom-trawler.js" charset="utf-8"></script>
   </head>
   <body>
       <div class="container">
@@ -24,10 +24,14 @@
 
 
         <section class="todo-list-container">
-          <ul class="todo-list">
-          </ul>
-          <button class="todo-button">Add Todo Item</button>
-          <button class="todo-button">Clear Todos</button>
+          <div class='ul-container'>
+            <ul class="todo-list">
+            </ul>
+           </div>
+
+          <input type="text" id="todo-input"></input>
+          <button class="todo-button" id="add-todo">Add Todo Item</button>
+          <button class="todo-button" id="remove-todos">Clear Todos</button>
         </section>
 
 
