@@ -8,7 +8,7 @@ body {
 }
 
 .nav {
-  height: 50px;
+  height: 15%;
   background: #FFC107;
   border-top: 5px solid darkslategray;
   position: relative;
@@ -78,13 +78,16 @@ ul li {
   flex-wrap: wrap;
   background: #FFC107;
   width: 100%;
-  height: 150px;
+  height: 15%;
 }
 
 .links {
   margin-right: 30px;
+  padding: 0;
 }
-
+.links a {
+  height: 15px;
+}
 
 .nav h1, h3 {
   margin-right: 100px;
@@ -156,11 +159,38 @@ ul {
   background: darkslategray;
   color: #CDDC39;
   height: 500px;
+  width: 100%;
+  transition-duration: 1s;
 }
 .demo-code {
-  width: 340px;
   text-align: center;
+  margin: 0;
   max-width: 320px;
-  margin: 0 auto;
+}
+@media (max-width: 1000px) {
+  .code-section {
+    width: 100%;
+  }
 
+  section {
+    width: 100%;
+  }
+  .code-console {
+    width: 100%;
+  }
+
+  .demo-code {
+    width: 144%;
+  }
+ }
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+body {
+  padding-bottom: 300px;
 }
